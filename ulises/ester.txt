@@ -1,0 +1,10 @@
+function ellipse(xc,yc,xa,ya)
+    xCenter = xc;
+    yCenter = yc;
+    xRadius = xa;
+    yRadius = ya;
+    theta = 0 : 0.01 : 2*pi;
+    x = xRadius * cos(theta) + xCenter;
+    y = yRadius * sin(theta) + yCenter;
+    plot(x, y, 'LineWidth', 2);
+end
